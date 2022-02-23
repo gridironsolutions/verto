@@ -1,0 +1,24 @@
+{
+  "name": "verto",
+  "version": "0.1.0",
+  "description": "A split-horizon DNS server in Node.js",
+  "main": "lib/index.js",
+  "type": "module",
+  "repository": "https://github.com/gridironsolutions/verto.git",
+  "author": "Tom Voss <tom.voss@gridironsolutions.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "dev": "nodemon --es-module-specifier-resolution=node --experimental-json-modules lib/index.js | pino-pretty -i name,pid,hostname -l -t \"SYS:mm-dd-yyyy HH:MM:ss.l\"",
+    "start": "NODE_ENV=production node --es-module-specifier-resolution=node --experimental-json-modules lib/index.js | pino-pretty -i name,pid,hostname -l -t \"SYS:mm-dd-yyyy HH:MM:ss.l\""
+  },
+  "dependencies": {
+    "dns2": "^2.0.1",
+    "dotenv": "^16.0.0",
+    "pino": "^7.8.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15",
+    "pino-pretty": "^7.5.1"
+  }
+}
