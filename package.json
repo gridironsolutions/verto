@@ -15,10 +15,10 @@
   "dependencies": {
     "dns2": "^2.0.1",
     "dotenv": "^16.0.0",
-    "pino": "^7.8.0"
+    "pino": "^7.9.2"
   },
   "devDependencies": {
     "nodemon": "^2.0.15",
-    "pino-pretty": "^7.5.1"
+    "pino-pretty": "^7.6.0"
   }
 }
